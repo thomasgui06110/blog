@@ -5,6 +5,6 @@ title: Mon article de test
 ---
 _Bonjour_,
 
-![PCIE](/assets/img_0964.jpg)
+![PCIE](/assets/age-signes-reverse-2.jpg)
 
 un **article** de test pour vérifier si tout est OK...
