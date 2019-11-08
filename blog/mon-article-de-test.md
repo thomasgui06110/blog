@@ -1,5 +1,5 @@
 ---
-slug: new-article
+slug: new-article2
 date: 2019-11-08T11:00:54.243Z
 title: Mon article de test
 ---
