@@ -1,6 +1,6 @@
 backend:
-  name: test-repo
-  repo: AnthonyWelc/blog
+  name: github
+  repo: thomasgui06110/blog
 
 media_folder: static/assets
 public_folder: assets
