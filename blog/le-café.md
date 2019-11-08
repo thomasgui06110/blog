@@ -6,3 +6,5 @@ title: 'Le café '
 Voici un article sur le **café**
 
 ![](/assets/36012-8-incroyables-vertus-sante-cafe-bio.png)
+
+Avec photo
