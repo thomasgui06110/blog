@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import Bio from "../components/bio"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
+
 
 import { Button, Icon, Divider } from "antd"
 
@@ -52,5 +54,12 @@ export const query = graphql`
         date(formatString: "DD MMMM, YYYY")
       }
     }
+    fileName: file(relativePath: { eq: "images/heroImage.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, maxHeight: 250) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
   }
 `
