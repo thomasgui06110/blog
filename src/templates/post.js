@@ -54,12 +54,6 @@ export const query = graphql`
         date(formatString: "DD MMMM, YYYY")
       }
     }
-    fileName: file(relativePath: { eq: "images/heroImage.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 400, maxHeight: 250) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+    
   }
 `

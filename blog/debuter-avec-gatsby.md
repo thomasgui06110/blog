@@ -2,6 +2,7 @@
 slug: debuter-avec-gatsby
 date: '2019-02-27'
 title: Débuter avec Gatsby
+Image: assets/img_0964.jpg
 ---
 # Gatsby.js Documentation !
 

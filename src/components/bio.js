@@ -15,7 +15,19 @@ const Bio = () => (
             authorImage
           }
         }
+        allImageSharp {
+            edges {
+              node {
+                ... on ImageSharp {
+                  resize(width: 150, height: 150, grayscale: true) {
+                    src
+                  }
+                }
+              }
+            }
+          }
       }
+      
     `}
     render={data => (
       <>
@@ -26,9 +38,11 @@ const Bio = () => (
               <Avatar size={64} src={data.site.siteMetadata.authorImage} />
             }
             title={<Link to="/about">{data.site.siteMetadata.author}</Link>}
+           
             description={data.site.siteMetadata.bio}
           />
         </List.Item>
+       
       </>
     )}
   />

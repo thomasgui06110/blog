@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from 'gatsby-image';
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -12,7 +13,7 @@ import { List } from "antd"
 const IndexPage = ({ data }) => (
   <Layout page='1'>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
+    
     <List
       itemLayout="horizontal"
       dataSource={data.allMarkdownRemark.edges}
@@ -33,10 +34,11 @@ const IndexPage = ({ data }) => (
               }
           />
         </List.Item>
+       
       )}
     />
     <Bio />
-    
+   
   </Layout>
 )
 export const query = graphql `
@@ -46,6 +48,7 @@ export const query = graphql `
         title
       }
     }
+
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
