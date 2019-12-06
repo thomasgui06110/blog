@@ -7,6 +7,6 @@ title: Gallery
 
 Bonjour, new Gallery 122 Rue d'antibes, Cannes...
 
-Nouvelle galery
+# Nouvelle galery
 
 ![](/assets/age-signes-reverse-2.jpg)
